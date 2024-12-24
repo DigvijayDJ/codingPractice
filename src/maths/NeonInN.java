@@ -18,7 +18,6 @@ public class NeonInN {
             if(sumNum == i){
                 System.out.println("Neon number : " + i);
             }
-
         }
     }
 }
