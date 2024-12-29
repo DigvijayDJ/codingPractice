@@ -1,4 +1,4 @@
-package arrays;
+package arrays.easy;
 
 public class RemoveDuplicatesInPlace {
     public static void main(String[] args){
