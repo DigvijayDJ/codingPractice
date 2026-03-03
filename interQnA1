@@ -9,8 +9,8 @@
 7-	Do you supported any production deployments?
 8-	Do you have any support experience? if yes, how exactly you have handled it and what is the major issue you got and how you fixed it.
 9-	If you are worked on one banking application and that app is getting slow from user end. How do you going to identify the issue, what are the faces that you be monitor.
-
-
+10-	What does git rebase do?
+11-	How logger is configured and used in your project.
 
 2 – Core Java Fundamentals:
 1-	Garbage collection
@@ -34,14 +34,30 @@
 19-	Will finally block always execute in java.
 20-	Is there any way to stop the finally block before executing.
 21-	What are the uses of System. Exit.
-22-	
+22-	try with resources.
+23-	Exception handling in java.
+24-	String constant pool in java.
+25-	association,aggregation,composition.
+26-	What is Abstraction?
+27-	Access specifiers and types.
+28-	Difference between heap memory and stack memory.
+29-	What is object methods.
+30-	Synchronize method and synchronize block.
+31-	Finally and finalize.
+32-	
 
 3 – Java Collection Framework:
 1-	what is the difference between HashMap and Concurrent HashMap?
 2-	Internal working of Concurrent HashMap?
 3-	What is Hash Collison.
 4-	What is an agenda of Array list in java.
-5-	
+5-	What are all the collections used in Project?
+6-	Hash Map and its internal details.
+7-	Is there any Optimization Done in HashMap in Java 8 with respect to performance?
+8-	Iteration in List and Map code snippets.
+9-	Hashmap vs hashtable.
+10-	Difference between Array List and Linked List.
+
 
 4 – Java 8  and Streams: 
 1-	reverse a string after removing the vowels.
@@ -80,12 +96,28 @@ String s1 = "1,1,4,5@3,1{6,7,4,8,9,3,4:5:7:?5?9?3?5?6,2";
 22-	Write a Palindrome program in different ways.
 23-	What is the default and static methods in interface?
 24-	What is the use of aggregate functions?
+25-	Streams - Name the Functional Interface introduced with Examples?
+26-	Consider List of Employees Emp1(id,Name,age) , Using stream, I want the result like this in Map<String,List<Employee>>:
+a.        (Employees LessThan30Age, empl1);
+b.        (Employees LessThan40Age,emp2);
+27-	Flatmap vs map.
+28-	Why do we implement lamda expression with functional interface.
+29-	Print the character array to string without whitespace.
+30-	Compare the two strings with values and null.
+31-	What is difference between Predicate and Filter?
+32-	based on the employee count , display top 2 department - using Java 8.
+
 
 5 - Multithreading:
 1-	if two threads access at a time How to handle ConcurrentModificationException?
 2-	What is meant by multithreading and difference between join and wait methods?
 3-	How to perform single task by multiple threads?
-4-	Difference between pessimistic and optimistic locking ?
+4-	Difference between pessimistic and optimistic locking?
+5-	How to Synchronize thread without using Synchronized Keyword?
+6-	Thread Life Cycle
+7-	What is the difference between Blocked and waiting Thread state.
+8-	Is HashMap is Thread safe. How to Synchronize HashMap?
+
 
 6 - JVM & Memory : 
 
@@ -102,6 +134,13 @@ String s1 = "1,1,4,5@3,1{6,7,4,8,9,3,4:5:7:?5?9?3?5?6,2";
 10-	Autowired and types of autowired.
 11-	what is the purpose of spring IOC?
 12-	Spring MVC architecture.
+13-	What will happen if one bean(A) is dependent on another bean(B) and B dependent on A in spring?
+14-	Modifying annotation.
+15-	Qualifier annotation.
+16-	Spring handler mappings.
+17-	How was the JSON contract made in your previous projects?
+18-	what is @Scop?
+
 
 
 8 – Springboot : 
@@ -118,8 +157,20 @@ String s1 = "1,1,4,5@3,1{6,7,4,8,9,3,4:5:7:?5?9?3?5?6,2";
 11-	@SpringApplication
 12-	Scheduler annotations in sprint boot.
 13-	how to create a composite key in entity class.
-
 14-	how to avoid Serialization for Sensitive data in JPA?
+15-	@PathVariable and @RequestParam.
+16-	what is lombok approach in springboot?
+17-	AOP in spring. springboot actuator and actuator endpoints
+18-	Handler class in spring boot.
+19-	How to add external server.
+20-	what is @Scop?
+21-	can we use more than one properties file, how?
+22-	How to call properties file or where we call it?
+23-	What are all the build tools you have worked on like ANT, MAVEN. Explain them.
+24-	One scenario-based question related to @Transient annotation. 
+25-	Migrating project from spring MVC framework to spring boot.
+26-	How @SpringBootApplication Work internally?
+
 
 9 – REST API : 
 1-	What is REST API
@@ -137,16 +188,17 @@ String s1 = "1,1,4,5@3,1{6,7,4,8,9,3,4:5:7:?5?9?3?5?6,2";
 13-	Git Commands?
 14-	how to handle cors and csrf?
 15-	How to create restful webservices?
-16-	
+16-	In Case of Rest API, where does the call lands in before hitting controller?
+17-	Concepts to Refresh.
 
 
-10 – Security :
+10 – Security:
 1-	Spring security
 2-	Authentication vs Authorization.
 3-	explaining JWT token based authentication.
 4-	You have one endpoint which is giving 200 as status code for one user and 401(unauthorised) for another user - what exactly API is doing here.
 5-	what kind of security you have used in recent project you worked and how you implemented it.
-
+6-	In configuration file we have userid and password but if we should not have password there for security how you can do that.
 
 11 – Microservices:
 1-	load balancer, api gateway.
@@ -163,17 +215,40 @@ String s1 = "1,1,4,5@3,1{6,7,4,8,9,3,4:5:7:?5?9?3?5?6,2";
 12-	Service Discovery and Registry in Micro services
 13-	Explain how application server handles the JMS Connection?
 14-	What are the main APIs of Kafka and explain?
+15-	How to limit Number of user accessing Rest API.
+16-	How does a communication between an UI and Rest API happens?
+17-	Is microservices state full or state less.
+18-	How to handle cache value in microservices.
+19-	Have you familiar with graphql.
+20-	How to enable security for web services.
+21-	Diff b/w first level cache and second level cache.
+22-	Is it possible to disable first level cache.
 
 
 
 12 – Hibernate/ JPA:
 1-	hibernate basic annotations.
 2-	Hibernate Session Management.
-3-	
+3-	get() and load() in hibernate.
+4-	update() and merge() in hibernate.
+5-	save() and saveOrUpdate() in hibernate.
+6-	How to retrieve the particular column from table using JPA hibernate.
+7-	Filter or search the table by keyword of different columns and retrieve the data from DB directly in spring boot.
+8-	Mappings in Hibernate.
+9-	Diff b/w save and saveOrUpdate method.
+10-	
+
 
 13 – SQL and DB:
 1-	SQL - Usage of RANK, DENSE_RANK & ROW_NUMBER – difference.
 2-	What is the difference between cartesian join and cross join?
+3-	Write a SQL query LEFT JOIN for two table.
+4-	Second highest salary query in mysql.
+5-	Difference between Delete and Truncate.
+6-	Primary key & unique key difference.
+7-	What is the background process to store details in DB.
+8-	I have 6 rows to insert DB if 4th row throws exception what will be the output.
+
 
 
 14 – Design Patterns:
@@ -192,12 +267,13 @@ String s1 = "1,1,4,5@3,1{6,7,4,8,9,3,4:5:7:?5?9?3?5?6,2";
 8-	What is Spring Cloud? 
 9-	Azure Services
 10-	CI/CD Jenkins pipeline creation.
-11-	
+11-	Have you worked in EJB?
 
 16 – Testing:
 1-	JUNIT testing.
 2-	About Unit Test cases, Junit, Assert and all Annotations.
-3-	
+3-	On Unit Testing, say some syntax on it and explain about Argument Matcher.
+4-	Exception handling in Junit.
 
 17 – Miscellaneous: 
 1-	Shallow copy vs deep copy
@@ -205,5 +281,8 @@ String s1 = "1,1,4,5@3,1{6,7,4,8,9,3,4:5:7:?5?9?3?5?6,2";
 3-	Future and Completable future – difference
 4-	ExecutorService, Completable Future
 5-	SDLC and Agile Process
+6-	dirty checking mechanism.
+7-	Agile process.
+8-	How sequential sprints are handled in agile methodology for jira story that are more than a month.
 
 
